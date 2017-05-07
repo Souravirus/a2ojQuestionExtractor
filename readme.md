@@ -4,6 +4,7 @@ This is a web scrapper to download more than one questions of a2oj website as .h
 2.Now there should also be php-curl in your computer.I installed it in my computer by 
 ```
 sudo apt-get install php7.0-curl
+```
 3.Now make a folder  named questions where you have downloaded this folder.
 4.Now go to terminal and type 
 ```
