@@ -34,7 +34,7 @@
             echo("Now you enter 2 numbers that signifies from which file to which file you want to download:");
             $start=readline("Enter the starting file number");
             $end=readline("Enter the ending file number");
-            for($i=$start;$i<$end;$i++)
+            for($i=$start;$i<=$end;$i++)
             {
                 $url3=$match2[1][$i];
                 curl_setopt($curl, CURLOPT_URL,$url3);
