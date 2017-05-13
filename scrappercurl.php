@@ -14,7 +14,7 @@
             print_r($categories['name']);
             
             //function to enter the number through user
-            $number=readline("So which category you want to download");
+            $number=readline("Enter the index of category you want to download");
             
             //Again enter to the category and scrap from them
             $url2="https://www.a2oj.com/".$match[1][$number];
@@ -31,7 +31,7 @@
             print_r($categories2['name']);
             
             //Now i am going to the program page and scrapping its contents to a new .html file
-            echo("Now you enter 2 numbers that signifies from which file to which file you want to download:");
+            echo("Now you enter 2 numbers that signifies from which file to which file you want to download\n");
             $start=readline("Enter the starting file number");
             $end=readline("Enter the ending file number");
             for($i=$start;$i<=$end;$i++)
@@ -40,7 +40,7 @@
                 curl_setopt($curl, CURLOPT_URL,$url3);
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER,true);
                 $result3=curl_exec($curl);
-                $filename="questions/q".$i.".html";
+                $filename="questions/cat".$number."/".$match2[2][$i].".html";
                 $file=fopen($filename, 'w');
                 if($file==false){
                     echo("Error opening file Problem may be less permission to that folder where i want to write");

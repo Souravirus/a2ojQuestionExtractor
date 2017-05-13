@@ -8,7 +8,14 @@ sudo apt-get install php7.0-curl
 ```
 3.Now make a folder  named questions where you have downloaded this folder.
 
-4.Now go to terminal and type 
+4.Now you have to make multiple folders in the question directory.You can make that by following the steps:
+Step 1:First run the scrappercurl.html program and see how many categories are there. Let that number be i.
+Step 2:Then make that number of directories by running the following command in linux:
+```
+mkdir cat{1...i}
+```
+
+5.Now go to terminal and type 
 ```
 php scrappercurl.php
 ```
